@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'work Sans', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width:80%;
+  margin: 0 auto
