@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: #fff;
+  padding-bottom: 23px;
 }
 
 header::after {
