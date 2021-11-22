@@ -7,6 +7,11 @@ body {
   background-color: #113450
 }
 
+h1 {
+  background-color: #ffffff;
+  padding: 50px;
+}
+
 .container {
   width:80%;
   margin: 0 auto;
