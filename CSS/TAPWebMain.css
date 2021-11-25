@@ -21,6 +21,7 @@ h1 {
 header {
   background-color: #fff;
   padding-bottom: 10px;
+  box-shadow:  0 1px 3px rgb(139, 146, 151);
 }
 
 header::after {
@@ -78,4 +79,8 @@ transition: all ease-in-out 250ms;
 
 nav a:hover::before {
 width: 100%;
+}
+
+@media screen and (max-width: 1187px) {
+
 }
