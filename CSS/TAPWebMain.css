@@ -4,11 +4,11 @@ body {
   margin: 0;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
-  background-color: #113450
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(0, 61, 104, 0.9);
   padding: 20px;
   font-size: 50px;
 }
