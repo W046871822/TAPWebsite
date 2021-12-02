@@ -87,4 +87,59 @@ nav a:hover::before {
 }
 
 @media screen and (max-width: 1187px) {
+    .topnav a {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 75%;
+      padding: 8px 8px;
+    }
+	  a{
+		  float: none;
+      display: block;
+      text-align: left;
+      width: 75%;
+      padding: 8px 8px;
+	  }
+    h1 {
+        width:100%;
+        font-size: 2em;
+    }
+    .content p {
+        width:100%;
+        font-size: 1em;
+    }
+    .content img {
+    width: 82%;
+}
+
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+
+td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+}
+td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+}
+.responsive {
+    width: 20%;
+    max-height: 200px;
+    width: auto;
+  }
+  .responsivesites { width: 50%;
+  max-width: 200px;
+  height: auto;
+}
 }
