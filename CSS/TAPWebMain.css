@@ -158,7 +158,7 @@ td:before {
 .column {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
-  max-width: 24.5%;
+  max-width: 24.2%;
   padding: 0 4px;
 }
 
