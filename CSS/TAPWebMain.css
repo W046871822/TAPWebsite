@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 
 body {
   margin: 0;
@@ -8,11 +8,23 @@ body {
 }
 
 h1{
-  background-color: rgb(255, 255, 255);
+  font-weight: 300px;
   padding: 20px;
   font-size: 50px;
+  color: rgb(255, 255, 255);
 }
 
+p {
+  Background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.latestprojects{
+  padding: 30px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 61, 104);
+}
 
 .picture img {
   width: 100%;
@@ -104,10 +116,7 @@ nav a:hover::before {
       width: 75%;
       padding: 8px 8px;
 	  }
-    h1 {
-        width:100%;
-        font-size: 2em;
-    }
+    
     .content p {
         width:100%;
         font-size: 1em;
