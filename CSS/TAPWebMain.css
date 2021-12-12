@@ -48,7 +48,6 @@ header::after {
 }
 
 .container {
-  position: fixed;
   width: 80%;
   margin: 0 auto;
 }
@@ -109,6 +108,7 @@ nav a:hover::before {
 }
 @media screen and (max-width: 1187px) {
   .topnav a {
+    position: fixed;
     float: none;
     display: block;
     text-align: left;
