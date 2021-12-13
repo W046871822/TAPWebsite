@@ -12,6 +12,10 @@ body {
   color: rgb(0, 42, 121);
 }
 
+button {
+  text-decoration-style: none;
+}
+
 h1 {
   font-weight: 300px;
   padding: 20px;
