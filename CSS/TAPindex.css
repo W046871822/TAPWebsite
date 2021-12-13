@@ -112,6 +112,11 @@ body {
     background-color: rgb(0, 155, 216);
   }
   
+  .darkmode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 42, 121);
+  }
+
   h1 {
     font-weight: 300px;
     padding: 20px;

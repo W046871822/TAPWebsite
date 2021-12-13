@@ -4,28 +4,33 @@ body {
   margin: 0;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(0, 155, 216);
+  background-color: rgb(2, 117, 194);
+}
+
+.darkmode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 42, 121);
 }
 
 h1 {
   font-weight: 300px;
   padding: 20px;
   font-size: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(244, 244, 244);
 }
 
 p {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(244, 244, 244);
   padding: 20px;
 }
 
 ul, li {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(244, 244, 244);
   padding: 20px;
 }
 
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(244, 244, 244);;
   padding-bottom: 10px;
   box-shadow: 0 1px 3px rgb(142, 157, 168);
 }
@@ -39,7 +44,7 @@ header::after {
 .latestprojects {
   padding: 30px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(244, 244, 244);;
   color: rgb(0, 155, 216);
 }
 
