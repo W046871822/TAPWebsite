@@ -174,7 +174,7 @@ header::after {
   width: 100%;
 }
 
-.container {
+.navbar {
   width: 80%;
   margin: 0 auto;
   display: flex;
