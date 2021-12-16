@@ -9,36 +9,38 @@
 <body>
   <!--NAV BAR-->
 	<header>
-	<div class="navbar">
-		<img src="TAPimgs/TAPLogoDarkCurcuit.jpg" alt="logo. T A P" class="logo" width="100px" height="50px">
-		<button class="toggle"><span></span>
-      <span></span>
-      <span></span></button>
+	<div class="topnav">
+		<img src="TAPimgs/TAPLogoDarkCurcuit.jpg" alt="logo. T A P" class="logo" width="100px" height="25px">
     <nav>
-			<ul class="nav navcollaps">
+			<ul>
         <li><a href="#">Home</a></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Partners.html">Partners</a></li>
 				<li><a href="Media.html">Media</a></li>
-				<li><button onclick="myFunction()">Dark/Light</button></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
 			</ul>
 		</nav>
 	</div>
 </header>
-
+<button onclick="myFunction()">Dark/Light</button>
+  <br>
 <script>
   //darkmode
   function myFunction() {
      var element = document.body;
      element.classList.toggle("darkmode");
   }
-  
-  //hide nav
-    $(".toggle").click(function(){
-    $(".navcollaps").toggleClass("show");
-});
+  //responsive nav
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
   </script>
-  <br><br><br><br>
+  <br><br><br><br><br><br>
   <!--MAIN PAGE TITLE-->
 		<h1>Cole Harbour District High School <br>
       Technology Advantage Program</h1>
@@ -65,10 +67,11 @@
   </div>
   
   <footer>
-<a href="https://github.com/W046871822/TAPWebsite">GitHub</a>
-<a href="https://chd.hrce.ca/">Cole Harbour District High School Website</a>
-<a ></a>
-<a></a>
+    <br>
+<a href="https://github.com/W046871822/TAPWebsite">TAP Website GitHub</a>
+<br><a href="https://chd.hrce.ca/">Cole Harbour District High School Website</a>
+<br><a href=""></a>
+<br><a></a>
 
   </footer>
 </body>
