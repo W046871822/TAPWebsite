@@ -91,14 +91,14 @@ footer {
 /*latest projects on index*/
 .latestprojects {
   padding: 30px;
-  width: 60%;
+  width: 80%;
   color: rgb(0, 155, 216);
 }
 
 /*DARKMODE*/
 .darkmode footer {
   background-color: black;
-  color: white;
+  color: rgb(250, 250, 250);
 }
 
 .darkmode .latestprojects {
