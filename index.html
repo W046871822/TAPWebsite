@@ -6,11 +6,10 @@
 <link rel="stylesheet" href="CSS/TAPWebMain.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>TAP webpage</title>
-<style>
+  <style>/*......................................................*/
 /*......................................................*/
 /*......................................................*/
-/*......................................................*/
-/*CAROUSEl*/
+/*CAROUSEl IN INDEX*/
 .carousel {
   margin: 0 auto;
   overflow: hidden;
@@ -113,8 +112,7 @@
 
 /*......................................................*/
 /*................end of carousel.......................*/
-/*......................................................*/
-</style>
+/*......................................................*/</style>
 </head>
 <body>
   <!--NAV BAR-->
@@ -122,18 +120,14 @@
 	<div class="topnav">
 		<img src="TAPimgs/TAPLogoDarkCurcuit.jpg" alt="logo. T A P" class="logo" width="100px" height="25px">
     <nav>
-			<ul>
-        <li><a href="#">Home</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="Partners.html">Partners</a></li>
-				<li><a href="Media.html">Media</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-			</ul>
+        <a href="#">Home</a>
+				<a href="About.html">About</a>
+				<a href="Partners.html">Partners</a>
+				<a href="Media.html">Media</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 		</nav>
 	</div>
 </header>
-<button onclick="myFunction()">Dark/Light</button>
-  <br>
 <script>
   //darkmode
   function myFunction() {
@@ -151,9 +145,11 @@
 }
   </script>
   <br><br><br><br><br><br>
+  <br>
   <!--MAIN PAGE TITLE-->
 		<h1>Cole Harbour District High School <br>
       Technology Advantage Program</h1>
+  <button onclick="myFunction()">Dark/Light</button>
 
   <div class="latestprojects">
     <h2>Latest Projects</h2>
@@ -162,7 +158,7 @@
   <section class="carousel" aria-label="carousel" Tabindex="0">
   <a class="carousel__skip-link" href="#skip-link">Carousel</a>
   <div class="slides">
-    <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">1</div>
+    <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"><img src="TAPimgs/tapwebsitelatestprojectspost.jpg"></div>
     <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">2</div>
     <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">3</div>
     <div class="slides-item slide-4" id="slide-4" aria-label="slide 4 of 5" tabindex="0">4</div>
