@@ -9,18 +9,38 @@
 <body>
 	<header>
     <!--NAV BAR-->
-		<div class="container">
-			<img src="TAPimgs/TAPLogoSquareDarkCurcuit.jpg" alt="logo. T" class="logo">
+		<div class="topnav">
+	<img src="TAPimgs/TAPLogoSquareDarkCurcuit.jpg" alt="logo. T" class="Tlogo">
 			<nav>
 				<ul>
           <li><a href="index.html">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="About.html">About</a></li>
 					<li><a href="Partners.html">Partners</a></li>
 					<li><a href="Media.html">Media</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</ul>
+		</nav>
+	</div>
+</header>
+<button onclick="myFunction()">Dark/Light</button>
+  <br>
+<script>
+  //darkmode
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("darkmode");
+  }
+  //responsive nav
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+  <br><br><br><br><br><br>
   <!--TAP TITLE-->
   <h1>About TAP</h1>
 
@@ -28,10 +48,10 @@
     The TAP program aims to offer a more focused education experience for students who are interested in the field of information technology.
     <br><br>
     The following schools are involved with the TAP program;
-    <ul>
-      <li>Cole Harbour District High School</li>
-      <li>JL Ilsley High School</li>
-      <li>Yarmouth Consolidated Memorial High School</li>
+    <ul class="schools">
+      <li class="schools">Cole Harbour District High School</li>
+      <li class="schools">JL Ilsley High School</li>
+      <li class="schools">Yarmouth Consolidated Memorial High School</li>
   </ul>
   </p>
 	</body>

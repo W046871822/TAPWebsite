@@ -1,27 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="CSS/TAPWebMain.css">
-<title>Partners</title>
-</head>
-<body>
-	<header>
-		<div class="container">
-			<img src="TAPimgs/TAPLogoSquareDarkCurcuit.jpg" alt="logo. T" width="150px">
-			<nav>
-				<ul>
-        			<li><a href="index.html">Home</a></li>
-					<li><a href="About.html">About</a></li>
-					<li><a href="#">Partners</a></li>
-					<li><a href="Media.html">Media</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	
-	
-	
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="CSS/TAPWebMain.css" />
+    <title>Partners</title>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <header>
+      <div class="topnav">
+        <img
+          src="TAPimgs/TAPLogoSquareDarkCurcuit.jpg"
+          alt="logo. T"
+          class="Tlogo"
+        />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Partners.html">Partners</a></li>
+            <li><a href="Media.html">Media</a></li>
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+                ><i class="fa fa-bars"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <button onclick="myFunction()">Dark/Light</button>
+    <br />
+    <script>
+      //darkmode
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+      }
+      //responsive nav
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <!--OUR PARTNERS TITLE-->
+    <h1>
+      Our Partners
+    </h1>
+    <p>
+      IBM - IBM is our main industry partner. They are providing us with
+      mentorship and workplace experience opportunities.
+      <br /><a class="link" href="https://www.ibm.com/ca-en">IBM Website</a>
+    </p>
+
+    <p>
+      NSCC - NSCC is our main education partner, providing us with learning
+      opportunities through their college programs.
+      <br /><a
+        class="link"
+        href="https://www.nscc.ca/explorenscc/campuses/institute/"
+        >NSCC Website</a
+      >
+    </p>
+  </body>
 </html>

@@ -3,24 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="CSS/TAPMedia.css">
+<link rel="stylesheet" href="CSS/TAPWebMain.css">
 <title>Media</title>
 </head>
 <body>
 	<header>
-		<div class="container">
-			<img src="TAPimgs/TransTAPLogoSquareDarkCurcuit.jpg" alt="logo. T" width="150px">
+    <!--NAV BAR-->
+		<div class="topnav">
+			<img src="TAPimgs/TAPLogoSquareDarkCurcuit.jpg" alt="logo. T" class="Tlogo">
 			<nav>
 				<ul>
           <li><a href="index.html">Home</a></li>
 					<li><a href="About.html">About</a></li>
 					<li><a href="Partners.html">Partners</a></li>
-					<li><a href="#">Media</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	
+					<li><a href="Media.html">Media</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</ul>
+		</nav>
+	</div>
+</header>
+<button onclick="myFunction()">Dark/Light</button>
+  <br>
+<script>
+  //darkmode
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("darkmode");
+  }
+  //responsive nav
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+  <br><br><br><br><br><br>
+  
 	<div class="row">
         <div class="column">
           <img src="TAPimgs/NSCSCinstructer.jpg">
