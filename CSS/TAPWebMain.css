@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 
 body {
@@ -7,10 +8,229 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
+.darkmode h1 {
+  background-color: rgb(0, 0, 0);
+}
+
+.darkmode {
+  background-color: rgb(47, 49, 54);
+}
+
+.darkmode .link {
+  background-color: rgb(47, 49, 54);
+  color: white;
+}
+
+.link {
+  color: rgb(47, 49, 54);
+}
+
+.link:hover{
+  color: rgb(0, 0, 0);
+}
+
+.logo{
+  width: 150px;
+  height:70px;
+  padding: 20px;
+}
+
 button {
   background: none;
 	color: inherit;
-	border: none;/*......................................................*/
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+h1 {
+  background-color: rgb(0, 155, 216);
+  font-weight: 300px;
+  padding: 20px;
+  font-size: 50px;
+  color: rgb(250, 250, 250);
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+p {
+  padding: 20px;
+}
+
+ul, li {
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+}
+
+header {
+  background-color: rgb(250, 250, 250);
+  padding-bottom: 10px;
+  box-shadow: 0 1px 3px rgb(142, 157, 168);
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(0, 155, 216);
+  margin-top: 50px;
+}
+/*latest projects on index*/
+.latestprojects {
+  padding: 30px;
+  width: 96%;
+  color: rgb(0, 155, 216);
+}
+
+/*DARKMODE*/
+.darkmode footer{
+  background-color: black;
+  color: white;
+}
+
+.darkmode .latestprojects {
+  color: rgb(250, 250, 250);
+}
+
+.darkmode p {
+  color: rgb(250, 250, 250);
+}
+
+.darkmode .schools{
+color: rgb(250, 250, 250);
+background-color: rgb(47, 49, 54);
+}
+
+.picture img {
+  width: 100%;
+}
+
+.navbar {
+  background: rgb(250, 250, 250);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 2;
+}
+
+
+nav {
+  display: flex;
+  
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  position: relative;
+  
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+a:hover {
+  color: #000;
+}
+
+a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.Tlogo{
+  width:100px;
+  height:100px;
+  padding: 20px;
+  }
+/**/
+.beginning {
+height: 30%
+}
+
+@media screen and (max-width: 1234px) {
+  .navbar {
+    position: absolute;
+    text-align: left;
+    padding: 8px 8px;
+    flex-wrap: nowrap;'
+    flex-direction: column;
+  }
+  
+  .Tlogo{
+  width:70px;
+  height:70px;
+  }
+  
+  a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 75%;
+    padding: 8px 8px;
+    flex-wrap: nowrap;'
+    flex-direction: column;
+  }
+
+  .content p {
+    width: 100%;
+    font-size: 1em;
+  }
+  .content img {
+    width: 82%;
+  }
+  .toggle{
+    display: none;
+  }
+  .navcollaps{
+    display: block;
+    height:0 !important;
+    padding-top:10px !important;
+    background:transparent !important;
+    width: auto;
+    margin:0;
+    padding:0;
+    overflow:visible ;
+  }
+  
+}
+
+
+/*......................................................*/
+/*......................................................*/
+/*......................................................*/
 /*CAROUSEl IN INDEX*/
 .carousel {
     margin: 0 auto;
@@ -45,7 +265,7 @@ button {
     transform: scale(1);
     transform-origin: center center;
     transition: transform .5s;
-    width: 50%;
+    width: 48.5%;
   }
   
   .carousel__nav {
@@ -117,293 +337,44 @@ button {
 /*................end of carousel.......................*/
 /*......................................................*/
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+/*Responsive collage*/
 
-body {
-  margin: 0;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(250, 250, 250);
-}
-
-.darkmode {
-  background-color: rgb(47, 49, 54);
-}
-
-button {
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-h1 {
-  background-color: rgb(0, 155, 216);
-  font-weight: 300px;
-  padding: 20px;
-  font-size: 50px;
-  color: rgb(250, 250, 250);
-}
-
-.darkmode h1 {
-  background-color: rgb(0, 0, 0);
-}
-
-p {
-  padding: 20px;
-}
-
-ul, li {
-  background-color: rgb(250, 250, 250);
-  padding: 20px;
-}
-
-header {
-  background-color: rgb(250, 250, 250);
-  padding-bottom: 10px;
-  box-shadow: 0 1px 3px rgb(142, 157, 168);
-}
-
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.latestprojects {
-  padding: 30px;
-  width: 100%;
-  color: rgb(0, 155, 216);
-}
-.darkmode .latestprojects {
-  color: rgb(250, 250, 250);
-}
-
-.mainlist {
-  color
-}
-
-.picture img {
-  width: 100%;
-}
-
-.navbar {
-
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-}
-
-
-nav {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
-.topnav {
-  display: fixed;
-}
-@media screen and (max-width: 1187px) {
-  .topnav a {
-    position: fixed;
-
-    float: none;
-    display: block;
-    text-align: left;
-    width: 75%;
-    padding: 8px 8px;
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
-  a {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 75%;
-    padding: 8px 8px;
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 24.2%;
+    padding: 0 4px;
   }
-
-  .content p {
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100%;
-    font-size: 1em;
   }
-  .content img {
-    width: 82%;
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
   }
-}
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-h1 {
-  background-color: rgb(0, 155, 216);
-  font-weight: 300px;
-  padding: 20px;
-  font-size: 50px;
-  color: rgb(250, 250, 250);
-}
-
-p {
-  padding: 20px;
-}
-
-ul, li {
-  background-color: rgb(250, 250, 250);
-  padding: 20px;
-}
-
-header {
-  background-color: rgb(250, 250, 250);
-  padding-bottom: 10px;
-  box-shadow: 0 1px 3px rgb(142, 157, 168);
-}
-
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.latestprojects {
-  padding: 30px;
-  width: 100%;
-  color: rgb(0, 155, 216);
-}
-
-.picture img {
-  width: 100%;
-}
-
-.navbar {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
-.topnav {
-  display: fixed;
-}
-@media screen and (max-width: 1187px) {
-  .topnav a {
-    position: fixed;
-    float: none;
-    display: block;
-    text-align: left;
-    width: 75%;
-    padding: 8px 8px;
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
   }
-  a {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 75%;
-    padding: 8px 8px;
-  }
-
-  .content p {
-    width: 100%;
-    font-size: 1em;
-  }
-  .content img {
-    width: 82%;
-  }
-}
