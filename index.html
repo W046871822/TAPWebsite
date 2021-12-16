@@ -3,22 +3,23 @@
 <head>
 <link rel="icon" type="image/png" href="TAPimgs/favicon-32x32.png" sizes="32x32" />
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="CSS/TAPindex.css">
+<link rel="stylesheet" href="CSS/TAPWebMain.css">
 <title>TAP webpage</title>
 </head>
 <body>
   <!--NAV BAR-->
 	<header>
-	<div class="container">
-		<img src="TAPimgs/TAPLogoDarkCurcuit.png" alt="logo. T A P" width="100em">
-		<nav>
-			<ul>
+	<div class="navbar">
+		<img src="TAPimgs/TAPLogoDarkCurcuit.jpg" alt="logo. T A P" class="logo" width="100px" height="50px">
+		<button class="toggle"><span></span>
+      <span></span>
+      <span></span></button>
+    <nav>
+			<ul class="nav navcollaps">
         <li><a href="#">Home</a></li>
 				<li><a href="About.html">About</a></li>
 				<li><a href="Partners.html">Partners</a></li>
 				<li><a href="Media.html">Media</a></li>
-				<li><a href="#">FAQs</a></li>
-				<li><a href="#">Sign In</a></li>
 				<li><button onclick="myFunction()">Dark/Light</button></li>
 			</ul>
 		</nav>
@@ -26,13 +27,18 @@
 </header>
 
 <script>
+  //darkmode
   function myFunction() {
      var element = document.body;
      element.classList.toggle("darkmode");
   }
-  //yes
-  </script>
   
+  //hide nav
+    $(".toggle").click(function(){
+    $(".navcollaps").toggleClass("show");
+});
+  </script>
+  <br><br><br><br>
   <!--MAIN PAGE TITLE-->
 		<h1>Cole Harbour District High School <br>
       Technology Advantage Program</h1>
@@ -42,7 +48,7 @@
     
     <!--CAROUSEL-->
   <section class="carousel" aria-label="carousel" Tabindex="0">
-  <a class="carousel__skip-link" href="#skip-link">Carousel überspringen</a>
+  <a class="carousel__skip-link" href="#skip-link">Carousel</a>
   <div class="slides">
     <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">1</div>
     <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">2</div>
