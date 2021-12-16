@@ -130,23 +130,10 @@ footer {
 }
 
 .topnav nav {
-  display: flex;
-}
-
-.topnav nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  flex-direction: row;
   flex-wrap: nowrap;
-}
-
-.topnav nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  position: relative;
 }
 
 .topnav nav a {
@@ -154,6 +141,9 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+  display: inline-block;
+  padding: 50px;
+  position: relative;
 }
 
 .topnav a:hover {
@@ -166,17 +156,18 @@ footer {
   height: 5px;
   background-color: #444;
   position: absolute;
-  top: 0;
+  top: 20px;
   width: 0%;
   transition: all ease-in-out 250ms;
-}
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
 }
 
 .topnav nav a:hover::before {
   width: 100%;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 @media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
@@ -205,206 +196,10 @@ footer {
 
 .Tlogo {
   width: 100px;
-  height: 100px;
+  height: 90px;
   padding: 20px;
 }
 /**/
 .beginning {
   height: 30%;
-}
-
-@media screen and (max-width: 1234px) {
-  .navbar {
-    position: absolute;
-    text-align: left;
-    padding: 8px 8px;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  .Tlogo {
-    width: 70px;
-    height: 70px;
-  }
-
-  a {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 75%;
-    padding: 8px 8px;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  .content p {
-    width: 100%;
-    font-size: 1em;
-  }
-  .content img {
-    width: 82%;
-  }
-  .toggle {
-    display: none;
-  }
-  .navcollaps {
-    display: block;
-    height: 0 !important;
-    padding-top: 10px !important;
-    background: transparent !important;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
-  }
-}
-
-/*......................................................*/
-/*......................................................*/
-/*......................................................*/
-/*CAROUSEl IN INDEX*/
-.carousel {
-  margin: 0 auto;
-  overflow: hidden;
-  flex-basis: 80%;
-  text-align: center;
-}
-
-.slides {
-  display: flex;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-.slides::-webkit-scrollbar {
-  display: none;
-}
-
-.slides-item {
-  align-items: center;
-  border-radius: 10px;
-  display: flex;
-  flex-shrink: 0;
-  font-size: 100px;
-  height: 600px;
-  justify-content: center;
-  margin: 0 1rem;
-  position: relative;
-  scroll-snap-align: start;
-  transform: scale(1);
-  transform-origin: center center;
-  transition: transform 0.5s;
-  width: 48.5%;
-}
-
-.carousel__nav {
-  padding: 1.25rem 0.5rem;
-}
-
-.slider-nav {
-  align-items: center;
-  background-color: #ddd;
-  border-radius: 40%;
-  color: #000;
-  display: inline-flex;
-  height: 1.5rem;
-  justify-content: center;
-  padding: 0.5rem;
-  position: relative;
-  text-decoration: none;
-  width: 1.5rem;
-}
-
-.slider-nav:hover,
-.slider-nav:active {
-  background-color: #000;
-  color: #fff;
-}
-
-.slide-1 {
-  background-color: #fdc;
-}
-
-.slide-2 {
-  background-color: #bfd;
-}
-
-.slide-3 {
-  background-color: #cdf;
-}
-
-.slide-4 {
-  background-color: #dca;
-}
-
-.slide-5 {
-  background-color: #ffc;
-}
-
-.carousel__skip-link {
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  top: auto;
-  width: 1px;
-}
-
-.carousel__skip-link:focus {
-  align-items: center;
-  background-color: #ddd;
-  color: #fff;
-  display: flex;
-  height: 600px;
-  justify-content: center;
-  opacity: 0.8;
-  width: 80%;
-  z-index: 10;
-}
-
-/*......................................................*/
-/*................end of carousel.......................*/
-/*......................................................*/
-
-/*Responsive collage*/
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 24.2%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
 }
