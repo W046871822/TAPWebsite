@@ -91,6 +91,7 @@ footer {
 /*latest projects on index*/
 .latestprojects {
   padding: 30px;
+  width: 60%;
   color: rgb(0, 155, 216);
 }
 
